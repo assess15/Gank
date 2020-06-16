@@ -1,9 +1,8 @@
 package material.com.settings;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Interceptor;
@@ -19,8 +18,6 @@ import com.yanzhenjie.permission.SettingService;
 
 import java.util.List;
 
-import material.com.base.BaseActivity;
-import material.com.base.app.BaseApplication;
 import material.com.base.impl.GetActImpl;
 
 /**

@@ -1,6 +1,6 @@
 package material.com.news.model;
 
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 
 import java.util.List;
 

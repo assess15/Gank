@@ -1,6 +1,6 @@
 package material.com.settings;
 
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 
 import material.com.base.impl.SettingImpl;
 

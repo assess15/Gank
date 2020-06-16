@@ -1,6 +1,6 @@
 package material.com.news.api;
 
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 
 import io.reactivex.Observable;
 import material.com.news.model.NewsEntity;

@@ -1,8 +1,6 @@
 package material.com.news.presenter;
 
-import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
@@ -18,7 +16,6 @@ import material.com.flow.FlowFragment;
 import material.com.news.BuildConfig;
 import material.com.news.adapter.ViewPagerAdapter;
 import material.com.news.ui.IAllNewView;
-import material.com.news.ui.NewFragment;
 
 /**
  * Created by cangwang on 2017/8/4.

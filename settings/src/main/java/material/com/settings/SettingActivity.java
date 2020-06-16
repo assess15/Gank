@@ -2,9 +2,9 @@ package material.com.settings;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -17,7 +17,6 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 
 import org.greenrobot.eventbus.EventBus;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 

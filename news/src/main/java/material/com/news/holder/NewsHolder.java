@@ -1,9 +1,9 @@
 package material.com.news.holder;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
-import android.support.annotation.Keep;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import androidx.annotation.Keep;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import material.com.news.databinding.NewsItemBinding;

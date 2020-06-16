@@ -1,7 +1,6 @@
 package material.com.base;
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 /**
  * Created by zjl on 2017/3/27.
  */

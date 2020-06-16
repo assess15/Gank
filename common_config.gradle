@@ -1,19 +1,18 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 project.ext {
-    compileSdkVersion25 = 25
-    buildToolsVersion25 = "25.0.2"
-    minSdkVersion14 = 14
-    targetSdkVersion25 = 25
+    compileSdkVersion25 = 29
+    buildToolsVersion25 = "29.0.2"
+    minSdkVersion14 = 21
+    targetSdkVersion25 = 29
     applicationId = "material.com.gank"
 
-    isDebug = false;
-    isLib = false;
-    isSettingDebug = false;
-    isNewsDebug = false;
+    isDebug = false
+    isLib = false
+    isSettingDebug = false
+    isNewsDebug = false
 
     //设置App配置
     setAppDefaultConfig = {
-        extension->
+        extension ->
             extension.apply plugin: 'com.android.application'
             extension.description "app"
             setAndroidConfig extension.android
@@ -36,57 +35,57 @@ project.ext {
     }
 
     setDefaultConfig = {
-        extension->
+        extension ->
             setAndroidConfig extension.android
             setDependencies extension.dependencies
     }
 
     //设置Android配置
-    setAndroidConfig ={
-        extension->
-            extension.compileSdkVersion 25
-            extension.buildToolsVersion "25.0.2"
+    setAndroidConfig = {
+        extension ->
+            extension.compileSdkVersion 29
+            extension.buildToolsVersion "29.0.2"
             extension.defaultConfig {
-                targetSdkVersion 25
+                targetSdkVersion 29
 
                 testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
                 javaCompileOptions {
                     annotationProcessorOptions {
-                        arguments = [ moduleName : extension.project.getName() ]
+//                        arguments = [ moduleName : extension.project.getName() ]
                     }
                 }
             }
-            extension.buildTypes{
-                debug{
-                    extension.defaultConfig{minSdkVersion 21}
+            extension.buildTypes {
+                debug {
+                    extension.defaultConfig { minSdkVersion 21 }
                 }
-                release{
-                    extension.defaultConfig{minSdkVersion 14}
+                release {
+                    extension.defaultConfig { minSdkVersion 21 }
                 }
             }
 
-            extension.dataBinding{
-                enabled = true
+            extension.buildFeatures {
+                dataBinding = true
             }
-            extension.project.tasks.whenTaskAdded { task ->
-                if (task.name.contains("lint")//不启动lint代码扫描潜在bug可以使用
-                        ||task.name.equals("clean")
-                        ||task.name.contains("Aidl") //项目中有用到aidl则不可以舍弃这个任务
-                        ||task.name.contains("mockableAndroidJar")//用不到测试的时候就可以先关闭
-                        ||task.name.contains("UnitTest")//用不到测试的时候就可以先关闭
-                        ||task.name.contains("AndroidTest")//用不到NDK和JNI的也关闭掉
-                        || task.name.contains("Ndk")
-                        || task.name.contains("Jni")
-                ) {
-                    task.enabled = false
-                }
-            }
+//            extension.project.tasks.whenTaskAdded { task ->
+//                if (task.name.contains("lint")//不启动lint代码扫描潜在bug可以使用
+//                        || task.name.equals("clean")
+//                        || task.name.contains("Aidl") //项目中有用到aidl则不可以舍弃这个任务
+//                        || task.name.contains("mockableAndroidJar")//用不到测试的时候就可以先关闭
+//                        || task.name.contains("UnitTest")//用不到测试的时候就可以先关闭
+//                        || task.name.contains("AndroidTest")//用不到NDK和JNI的也关闭掉
+//                        || task.name.contains("Ndk")
+//                        || task.name.contains("Jni")
+//                ) {
+//                    task.enabled = false
+//                }
+//            }
     }
 
     //设置依赖
     setDependencies = {
-        extension->
+        extension ->
             extension.compile fileTree(dir: 'libs', include: ['*.jar'])
-            extension.annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+            extension.annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     }
 }

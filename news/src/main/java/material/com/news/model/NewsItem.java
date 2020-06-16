@@ -1,8 +1,6 @@
 package material.com.news.model;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;

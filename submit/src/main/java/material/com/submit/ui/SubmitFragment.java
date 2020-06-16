@@ -1,31 +1,26 @@
 package material.com.submit.ui;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
+import androidx.annotation.Nullable;
+
+import com.google.android.material.textfield.TextInputEditText;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextSwitcher;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ViewSwitcher;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
 import material.com.submit.R;
 import material.com.submit.api.SubmitService;
 import material.com.submit.model.SubmitResult;
-import material.com.submit.prestenter.SubmitPresenter;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;

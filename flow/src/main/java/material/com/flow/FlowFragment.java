@@ -1,12 +1,10 @@
 package material.com.flow;
 
-import android.animation.Animator;
-import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.util.DisplayMetrics;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

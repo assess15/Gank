@@ -1,10 +1,14 @@
 apply from: "${rootProject.rootDir}/common_config.gradle"
-
 project.ext.setLibDefaultConfig project
 android {
     defaultConfig {
         versionCode 1
         versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
     buildTypes {
         release {
@@ -15,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':base')
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':base')
 }

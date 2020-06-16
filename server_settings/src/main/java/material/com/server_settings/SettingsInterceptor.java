@@ -2,7 +2,7 @@ package material.com.server_settings;
 
 import android.Manifest;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Interceptor;
@@ -18,7 +18,6 @@ import com.yanzhenjie.permission.SettingService;
 
 import java.util.List;
 
-import material.com.base.app.BaseApplication;
 import material.com.base.impl.GetActImpl;
 
 /**

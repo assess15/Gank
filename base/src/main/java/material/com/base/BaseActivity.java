@@ -1,6 +1,6 @@
 package material.com.base;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by cangwang on 2017/4/1.

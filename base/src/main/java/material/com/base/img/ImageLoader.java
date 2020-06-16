@@ -1,17 +1,15 @@
 package material.com.base.img;
 
 import android.app.Application;
-import android.content.Context;
-import android.databinding.BindingAdapter;
+
+import androidx.databinding.BindingAdapter;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Looper;
-import android.support.annotation.DrawableRes;
-import android.support.v4.app.Fragment;
-import android.view.View;
+import androidx.annotation.DrawableRes;
+
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.MemoryCategory;
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.data.DataFetcher;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;

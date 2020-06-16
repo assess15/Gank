@@ -25,7 +25,7 @@
  #混淆时是否记录日志
 -verbose
 #apk 包内所有 class 的内部结构
--dump class_files.txt
+#-dump class_files.txt
 #未混淆的类和成员
 -printseeds seeds.txt
 #列出从 apk 中删除的代码
@@ -123,5 +123,5 @@
 -keep public class * extends android.support.v4.**
 -keep public class * extends android.support.v4.app.Fragment
 #忽略警告
--ignorewarning
+#-ignorewarning
 
